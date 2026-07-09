@@ -1,0 +1,21 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px 90px;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+}
+.hero-section-color{
+    background-color: #fff8f3;
+}
