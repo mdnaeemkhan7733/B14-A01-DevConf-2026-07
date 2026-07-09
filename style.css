@@ -1,21 +1,38 @@
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 12px 0;
 }
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:30px 90px;
+.navbar{
+    max-width: 1200px;
+    margin: auto;
 }
 ul{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    gap: 10px;
-    align-items: center;
+   display: flex;
+   list-style: none;
+   gap: 30px;
+   
+   align-items: center;
+   padding: 0;
+   margin: 0;
 }
-.hero-section-color{
-    background-color: #fff8f3;
+li{
+    list-style: none;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.Register-button {
+background-color:#2563EB;
+padding: 10px 20px;
+border-radius: 10px;
+font-weight: bold;
+font-size: 15px;
+color: white;
+border: none;
+}
+ul li a {
+    text-decoration: none;
 }
