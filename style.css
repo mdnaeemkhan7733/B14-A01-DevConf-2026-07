@@ -1,38 +1,249 @@
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 0;
-}
-.navbar{
-    max-width: 1200px;
-    margin: auto;
-}
-ul{
-   display: flex;
-   list-style: none;
-   gap: 30px;
-   
-   align-items: center;
-   padding: 0;
-   margin: 0;
-}
-li{
-    list-style: none;
-}
 *{
-    padding: 0;
-    margin: 0;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-.Register-button {
-background-color:#2563EB;
-padding: 10px 20px;
-border-radius: 10px;
-font-weight: bold;
-font-size: 15px;
-color: white;
-border: none;
+
+/* Navbar */
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
 }
-ul li a {
+
+ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+ul li a{
+    text-decoration:none;
+    color:#5b21b6;
+    font-size:18px;
+    font-weight:500;
+}
+
+.Register-button{
+    background:#2563EB;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* Hero Section */
+
+.hero-section{
+    position:relative;
+    width:100%;
+    height:700px;
+}
+
+.hero-section img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.hero-section-text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:70%;
+    text-align:center;
+    color:white;
+}
+
+.hero-section-text h2{
+    font-size:90px;
+    font-family:Arial, sans-serif;
+    margin-bottom:20px;
+}
+
+.hero-section-text p{
+    font-size:28px;
+    line-height:1.6;
+    margin-bottom:30px;
+}
+
+.Register-button-hero{
+    background:#2563EB;
+    color:white;
+    padding:15px 35px;
+    border:none;
+    border-radius:10px;
+    font-size:22px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* Meet the Speakers */
+
+.speakers{
+    width: 1200px;
+    margin: 80px auto;
+}
+
+.meet-with-speakers{
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 50px;
+}
+
+.speaker-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    width: 48%;
+    margin-bottom: 30px;
+    background: white;
+}
+
+.card img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.category{
+    margin: 15px;
+}
+
+.category a{
     text-decoration: none;
+    color: #2563EB;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card h3{
+    margin: 0 15px 10px;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
+.card h5{
+    margin: 0 15px 20px;
+    color: gray;
+    font-size: 14px;
+    font-weight: normal;
+}
+/*------------*/
+
+.price-section{
+    width:80%;
+    margin:80px auto;
+    text-align:center;
+}
+
+.price-box{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:40px;
+}
+
+.price-box .item{
+    width:250px;
+    padding:20px;
+    background:#f8f8f8;
+    border-radius:8px;
+}
+
+.price-box .item h2{
+    font-size:45px;
+    margin:10px 0;
+}
+
+.price-box .item button{
+    margin-top:20px;
+    padding:10px 20px;
+    background:#222;
+    color:#fff;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* ----------- */
+
+.contact{
+    width: 500px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.contact h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.contact p{
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.contact input,
+.contact textarea{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    background: #f4f4f4;
+    border-radius: 6px;
+    outline: none;
+    font-size: 16px;
+}
+
+.contact textarea{
+    height: 120px;
+    resize: none;
+}
+
+.contact button{
+    padding: 12px 30px;
+    border: none;
+    background: royalblue;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contact button:hover{
+    background: #1d4ed8;
+}
+
+
+/*---------------footer section-----------------*/
+
+.footer{
+    background: #0D1B2A;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 80px;
+}
+
+.footer h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.footer p{
+    margin: 8px 0;
+    font-size: 16px;
 }
